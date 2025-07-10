@@ -16,6 +16,7 @@ export const styles = StyleSheet.create({
     borderRadius:12,
     backgroundColor:"#1f222a",
     paddingHorizontal:10,
+    paddingVertical:15,
     alignItems:"center",
     flexDirection:"row",
     gap:10,
@@ -39,5 +40,15 @@ export const styles = StyleSheet.create({
     color:"#f4f4f4",
     fontSize:14,
     fontWeight:300
+  },
+  cardInfoBuy:{
+    height:"100%",
+    alignItems:"flex-end",
+    justifyContent:"space-between"
+  },
+  cardInfoBuyText:{
+    color:"#1ab65c",
+    fontSize:18,
+    fontWeight:900
   }
 });
