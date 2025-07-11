@@ -1,7 +1,7 @@
-import { StatusBar, View } from 'react-native';
+import { StatusBar, StyleSheet, View } from 'react-native';
 
 import { Home } from '@/src/screens/Home';
-import { styles } from "./styles";
+
 
 
 export default function HomeScreen() {
@@ -13,3 +13,11 @@ export default function HomeScreen() {
   );
 }
 
+export const styles = StyleSheet.create({
+  container: {
+    flex:1,
+    alignItems:"center",
+    paddingHorizontal:20,
+    backgroundColor:"#181A20"
+  }
+});
