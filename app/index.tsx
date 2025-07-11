@@ -1,23 +1,27 @@
-import { StatusBar, StyleSheet, View } from 'react-native';
+import { useRouter } from 'expo-router';
+import React, { useEffect } from 'react';
+import Login from './auth/Login';
 
-import { Home } from '@/src/screens/Home';
 
 
+export default function Index() {
 
-export default function HomeScreen() {
+    const router = useRouter();
+
+    useEffect(() => {
+        const timeout = setTimeout(()=>{
+            const isLoggedIn = false;
+
+            if (isLoggedIn) {
+                return router.navigate("/tabs/home");
+            }else{
+                return  <Login/>;
+            }
+        },1000)
+
+        return ()=> clearTimeout(timeout)
+    },[router])
   return (
-    <View style={styles.container}>
-      <Home/>
-      <StatusBar/>
-    </View>
+     <Login/>
   );
 }
-
-export const styles = StyleSheet.create({
-  container: {
-    flex:1,
-    alignItems:"center",
-    paddingHorizontal:20,
-    backgroundColor:"#181A20"
-  }
-});
