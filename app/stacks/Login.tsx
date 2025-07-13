@@ -4,9 +4,17 @@ import { StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-nativ
 import AntDesign from '@expo/vector-icons/AntDesign';
 import Entypo from '@expo/vector-icons/Entypo';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
+import { useRouter } from 'expo-router';
 
 
 export default function Login() {
+
+  let router = useRouter()
+
+  function handleHome() {
+    router.navigate("/tabs/home")
+  }
+
   return (
     <View style={styles.container}>
         <TouchableOpacity style={styles.header}>
@@ -26,7 +34,7 @@ export default function Login() {
           </View>
         </View>
 
-        <TouchableOpacity style={styles.btnSingnin}><Text style={styles.btnSingninText}>Entrar</Text></TouchableOpacity>
+        <TouchableOpacity onPress={()=>handleHome()} style={styles.btnSingnin}><Text style={styles.btnSingninText}>Entrar</Text></TouchableOpacity>
 
         <View style={styles.containerSeparator}>
             <View style={styles.separator}/>

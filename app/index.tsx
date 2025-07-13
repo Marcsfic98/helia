@@ -1,6 +1,6 @@
 import { useRouter } from 'expo-router';
 import React, { useEffect } from 'react';
-import Login from './auth/Login';
+import Login from './stacks/Login';
 
 
 
