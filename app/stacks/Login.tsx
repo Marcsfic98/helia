@@ -119,7 +119,8 @@ export const styles = StyleSheet.create({
       color:"#f4f4f4",
       fontSize:16,
       fontWeight:800
-    },containerSeparator:{
+    },
+    containerSeparator:{
       width:"100%",
       marginTop:50,
       flexDirection:"row",
