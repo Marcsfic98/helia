@@ -3,12 +3,13 @@ import { Tabs } from "expo-router";
 import AntDesign from '@expo/vector-icons/AntDesign';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
+import SimpleLineIcons from '@expo/vector-icons/SimpleLineIcons';
 import { Text, View } from "react-native";
 
 export default function TabsLayout() {
     return(
         <Tabs screenOptions={{headerShown:false, tabBarStyle:{backgroundColor:"#181a20",height:80,paddingTop:20},tabBarShowLabel:false, tabBarActiveTintColor:"#1ab65c",tabBarInactiveTintColor:"#757575"}} >
-
+            
             <Tabs.Screen name="home"  options={{tabBarIcon:({color})=> (
                 <View>
                     
@@ -33,7 +34,13 @@ export default function TabsLayout() {
                 </View>
             )}} />
 
-           
+            <Tabs.Screen name="profile" options={{tabBarIcon:({color})=> (
+               <View>
+                    
+                   <SimpleLineIcons name="user" size={24} color={color} />
+                   <Text style={{color:color,fontSize:10}}>Perfil</Text>
+               </View>
+            )}} />
         </Tabs>
     )
 }

@@ -3,7 +3,8 @@ import { StyleSheet } from 'react-native';
 export const styles = StyleSheet.create({
   container: {
     width:"100%",
-    gap:20
+    gap:20,
+    flex:1
   },
   cardButton:{
     alignItems:"flex-start",
@@ -21,6 +22,7 @@ export const styles = StyleSheet.create({
     flexDirection:"row",
     gap:10,
     justifyContent:"space-between",
+    marginBottom:10
   },
   cardImage:{
     width:90,

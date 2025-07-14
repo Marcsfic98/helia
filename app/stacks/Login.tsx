@@ -15,6 +15,9 @@ export default function Login() {
     router.navigate("/tabs/home")
   }
 
+  function handleSingUp() {
+    router.navigate("/stacks/Singup")
+  }
   return (
     <View style={styles.container}>
         <TouchableOpacity style={styles.header}>
@@ -61,7 +64,7 @@ export default function Login() {
 
         <View style={styles.footer}>
           <Text style={styles.footerText}>Não possui conta?</Text>
-          <TouchableOpacity ><Text style={styles.footerBtnText}>Cadastre-se</Text></TouchableOpacity>
+          <TouchableOpacity onPress={handleSingUp} ><Text style={styles.footerBtnText}>Cadastre-se</Text></TouchableOpacity>
         </View>
     </View>
   );
