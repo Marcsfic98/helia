@@ -1,8 +1,7 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 
-import { Entypo, Octicons } from "@expo/vector-icons";
-import Ionicons from '@expo/vector-icons/Ionicons';
+import { AntDesign, Entypo, Octicons } from "@expo/vector-icons";
 import { styles } from './styles';
 
 export function Header() {
@@ -14,7 +13,8 @@ export function Header() {
         </View>
         <View style={styles.headerRight}>
             <Octicons name="bell" size={24} color="#F4F4F4" />
-            <Ionicons name="bookmarks-outline" size={24} color="#F4F4F4" />
+            <AntDesign name="star" size={24} color="#F4F4F4" />
+            
         </View>
     </View>
   );

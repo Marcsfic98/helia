@@ -51,12 +51,12 @@ export default function Datails() {
         </View>
 
        <View style={styles.contentPhotosContainer}>
-         <ScrollView horizontal >
-          <Image style={styles.contentPhotosImg} source={require("../../assets/images/ap1.jpg")} />
-          <Image style={styles.contentPhotosImg} source={require("../../assets/images/ap1.jpg")} />
-          <Image style={styles.contentPhotosImg} source={require("../../assets/images/ap1.jpg")} />
-          <Image style={styles.contentPhotosImg} source={require("../../assets/images/ap1.jpg")} />
-          <Image style={styles.contentPhotosImg} source={require("../../assets/images/ap1.jpg")} />
+         <ScrollView horizontal showsHorizontalScrollIndicator={false} >
+          <Image style={styles.contentPhotosImg} source={{uri:"https://cdn.mrv.com.br/imoveis/upload/imagens/4600/thumb_detalhes/RECANTO-DAS-ARVORES_PE_PISCINA_2024_05_20_.jpg"}} />
+          <Image style={styles.contentPhotosImg} source={{uri:"https://cdn.mrv.com.br/imoveis/upload/imagens/4600/thumb_detalhes/RECANTO-DAS-ARVORES_PE_APTO-VARANDA_2024_05_20.jpg"}} />
+          <Image style={styles.contentPhotosImg} source={{uri:"https://cdn.mrv.com.br/imoveis/upload/imagens/4600/thumb_detalhes/RECANTO-DAS-ARVORES_PE_GUARITA-ENTARDECER_2024_05_20.jpg"}} />
+          <Image style={styles.contentPhotosImg} source={{uri:"https://cdn.mrv.com.br/imoveis/upload/imagens/4600/thumb_detalhes/RECANTO-DAS-ARVORES_PE_APTO-AREA-PRIVATIVA_2024_05_20.jpg"}} />
+          <Image style={styles.contentPhotosImg} source={{uri:"https://cdn.mrv.com.br/imoveis/upload/imagens/4600/thumb_detalhes/RECANTO-DAS-ARVORES_PE_CHURRASQUEIRA_2024_05_20_.jpg"}} />
         </ScrollView>
        </View>
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 
 import AntDesign from '@expo/vector-icons/AntDesign';
@@ -8,6 +8,8 @@ import { useRouter } from 'expo-router';
 
 
 export default function Login() {
+
+  const [secureTextEntry , SetSecureTextEntry] = useState(true);
 
   let router = useRouter()
 
@@ -31,9 +33,17 @@ export default function Login() {
               <TextInput style={styles.input} placeholderTextColor="#757575" placeholder='Seu e-mail'/>
           </View>
 
-          <View style={styles.contentInput}>
+          <View style={styles.contentInputPassword}>
+            <View style={styles.contentInput}>
               <Entypo name="lock" size={24} color="#757575" />
-              <TextInput style={styles.input} placeholderTextColor="#757575" placeholder='Sua senha'/>
+              <TextInput secureTextEntry={secureTextEntry}  style={styles.input} placeholderTextColor="#757575" placeholder='Sua senha'/>
+            </View>
+
+            <TouchableOpacity onPress={()=>SetSecureTextEntry(!secureTextEntry)} style={styles.contentBtnPassword} >
+              {
+                secureTextEntry === true ? (<Entypo name="eye" size={24} color="#757575" />):(<Entypo name="eye-with-line" size={24} color="#757575" />)
+              }
+            </TouchableOpacity>
           </View>
         </View>
 
@@ -163,5 +173,14 @@ export const styles = StyleSheet.create({
        color:"#1ab55c",
       fontSize:16,
       fontWeight:400
+    },
+    contentInputPassword:{
+      flexDirection:"row",
+      alignItems:"center",
+      justifyContent:"space-between",
+    },
+    contentBtnPassword:{
+      position:"absolute",
+      right:15
     }
 })
