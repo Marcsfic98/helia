@@ -1,50 +1,53 @@
-# Welcome to your Expo app 👋
+# Helia
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Bem-vindo ao repositório do aplicativo de aluguel de imóveis! Este projeto foi desenvolvido com o objetivo de conectar proprietários e inquilinos de forma eficiente, oferecendo uma experiência de busca e gestão de aluguéis moderna e intuitiva.
 
-## Get started
+## 🚀 Tecnologias Utilizadas
 
-1. Install dependencies
+O aplicativo foi construído com as seguintes tecnologias, garantindo performance, escalabilidade e uma base de código robusta:
 
-   ```bash
-   npm install
+* **React Native + Expo**: A combinação ideal para o desenvolvimento de aplicativos móveis multiplataforma, permitindo a criação de um único código para iOS e Android com uma configuração simplificada.
+
+* **TypeScript**: Uma superset do JavaScript que adiciona tipagem estática, resultando em um código mais seguro, legível e com menos erros em tempo de execução.
+
+* **Hooks**: Utilização de hooks como `useState` e `useEffect` para gerenciar o estado da aplicação e efeitos colaterais de forma funcional. O `useRouter` (ou similar) é usado para navegação eficiente entre as telas.
+
+* **Componentes Reutilizáveis**: A arquitetura do projeto é baseada em componentes reutilizáveis, o que facilita a manutenção, acelera o desenvolvimento e permite a expansão futura do aplicativo com menos esforço.
+
+## ✨ Funcionalidades Principais
+
+O aplicativo oferece um conjunto completo de funcionalidades para uma navegação completa e intuitiva:
+
+* **Página de Login e Cadastro**: Permite que novos usuários se registrem e usuários existentes façam login para acessar todas as funcionalidades do aplicativo.
+
+* **Filtro de Busca**: Um sistema de filtro avançado para que os usuários possam encontrar imóveis ideais com base em critérios como tipo de propriedade, localização, preço e número de quartos.
+
+* **Favoritos**: Os usuários podem adicionar imóveis que gostaram a uma lista de favoritos para consultá-los facilmente mais tarde.
+
+* **Página de Perfil**: Cada usuário tem uma página de perfil onde pode visualizar e editar suas informações pessoais e gerenciar suas propriedades alugadas ou favoritas.
+
+* **Página de Aluguel**: Uma tela detalhada para cada imóvel, com todas as informações necessárias e a opção de iniciar o processo de aluguel.
+
+Se você deseja explorar o código ou rodar o projeto na sua máquina, siga os passos abaixo:
+
+1. **Clone o repositório:**
+   ```
+   git https://github.com/Marcsfic98/helia.git
+   ```
+2. **Acesse o diretório do projeto:**
+   ```
+   cd helia
    ```
 
-2. Start the app
 
-   ```bash
-   npx expo start
-   ```
+## 🤝 Conecte-se Comigo
 
-In the output, you'll find options to open the app in a
+Sinta-se à vontade para se conectar comigo e saber mais sobre meu trabalho:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+* **LinkedIn**: https://www.linkedin.com/in/marcsfic/
+* **GitHub**: https://github.com/Marcsfic98/
+* **Email**: Marcsfic98@gmail.com
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Feito  por **Marcos Ribeiro**
